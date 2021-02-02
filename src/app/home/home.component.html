@@ -1,3 +1,6 @@
 <h1>Hi {{currentUser.firstName}}!</h1>
+<div class="container row" *ngIf="isAdmin">
+  <button class="btn btn-primary" (click)="goToAdminDash()">Go to Admin Dashboard</button>
+</div>
 <p>You're logged in to the Home page!!</p>
 <h3>you are currently in user dashboard</h3>

@@ -22,9 +22,6 @@ export class AppComponent {
     this.authenticationService.currentUser.subscribe(
       (x) => (this.currentUser = x)
     );
-    if (this.currentUser.role === "admin") {
-      this.isAdmin = true;
-    }
   }
 
   logout() {
