@@ -1,16 +1,15 @@
 import { Component, OnInit } from "@angular/core";
-import { first } from "rxjs/operators";
-
 import { User } from "../_models/user";
 import { AuthenticationService } from "../_services/authentication.service";
 import { UserService } from "../_services/user.service";
+import { first } from "rxjs/operators";
 
 @Component({
-  selector: "app-home",
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.css"],
+  selector: "app-users-dashboard",
+  templateUrl: "./users-dashboard.component.html",
+  styleUrls: ["./users-dashboard.component.css"],
 })
-export class HomeComponent implements OnInit {
+export class UsersDashboardComponent implements OnInit {
   currentUser: User;
   users = [];
 

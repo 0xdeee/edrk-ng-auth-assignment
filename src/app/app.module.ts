@@ -13,7 +13,8 @@ import { fakeBackendProvider } from './_helpers/fake-backend';
 import { AlertComponent } from './alert/alert.component'
 
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
-import { ErrorInterceptor } from './_helpers/error.interceptor'
+import { ErrorInterceptor } from './_helpers/error.interceptor';
+import { UsersDashboardComponent } from './users-dashboard/users-dashboard.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ErrorInterceptor } from './_helpers/error.interceptor'
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    AlertComponent
+    AlertComponent,
+    UsersDashboardComponent
   ],
   imports: [
     BrowserModule,
